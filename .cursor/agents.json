@@ -1,0 +1,64 @@
+{
+  "agents": [
+    {
+      "id": "designer",
+      "name": "DesignUXExpertAgent",
+      "description": "Elite UI/UX Design & Research Expert for design critiques and improvements",
+      "config": "./agents/designer.json"
+    },
+    {
+      "id": "frontend", 
+      "name": "FrontEndExpertAgent",
+      "description": "Elite React Native/Expo Development Expert for code analysis and optimization",
+      "config": "./agents/frontend.json"
+    },
+    {
+      "id": "reusability",
+      "name": "ReusabilityExpertAgent", 
+      "description": "Expert in DRY principles and component reusability",
+      "config": "./agents/reusability.json"
+    },
+    {
+      "id": "localization",
+      "name": "LocalizationServicesOptimizer",
+      "description": "Expert in location services and geolocation optimization",
+      "config": "./agents/localization.json"
+    },
+    {
+      "id": "performance",
+      "name": "PerformanceOptimizer",
+      "description": "Expert in React Native/Expo performance optimization",
+      "config": "./agents/performance.json"
+    },
+    {
+      "id": "collaborative",
+      "name": "CollaborativeAgent",
+      "description": "Intelligent Orchestrator for Dynamic Multi-Agent Collaboration",
+      "config": "./agents/collaborative.json"
+    },
+    {
+      "id": "innovation",
+      "name": "InnovationExpertAgent",
+      "description": "Generates innovative ideas and value-adding features for competitive advantage",
+      "config": "./agents/innovation.json"
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI/ML Expert Agent",
+      "description": "Elite AI/ML Integration & Intelligence Expert for intelligent features and AI-powered experiences",
+      "config": "./agents/ai-ml.json"
+    },
+    {
+      "id": "security",
+      "name": "Security Expert Agent",
+      "description": "Elite Mobile Security & Privacy Expert for comprehensive security and privacy protection",
+      "config": "./agents/security.json"
+    },
+    {
+      "id": "tasks",
+      "name": "TasksAgent",
+      "description": "Specialized Agent for Task and Improvement Analysis Tracking and Implementation Management",
+      "config": "./agents/tasks.json"
+    }
+  ]
+} 
