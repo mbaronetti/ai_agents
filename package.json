@@ -22,12 +22,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/ai_agents.git"
+    "url": "https://github.com/mbaronetti/ai_agents.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/ai_agents/issues"
+    "url": "https://github.com/mbaronetti/ai_agents/issues"
   },
-  "homepage": "https://github.com/yourusername/ai_agents#readme",
+  "homepage": "https://github.com/mbaronetti/ai_agents#readme",
   "engines": {
     "node": ">=16.0.0"
   },
