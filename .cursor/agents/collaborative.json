@@ -229,6 +229,7 @@
     "agentEcosystem": [
       "DesignUXExpertAgent",
       "FrontEndExpertAgent",
+      "BackendExpertAgent",
       "ReusabilityExpertAgent",
       "LocalizationServicesOptimizer",
       "PerformanceOptimizer",
@@ -794,6 +795,7 @@
       "requiredAgents": [
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
+        "BackendExpertAgent",
         "ReusabilityExpertAgent",
         "LocalizationServicesOptimizer",
         "PerformanceOptimizer",
@@ -882,6 +884,39 @@
         "Final collaborative review"
       ]
     },
+    "backendHeavyFeature": {
+      "description": "Features heavily dependent on backend services, APIs, and server-side processing",
+      "requiredAgents": [
+        "BackendExpertAgent",
+        "FrontEndExpertAgent",
+        "Security Expert Agent",
+        "PerformanceOptimizer"
+      ],
+      "optionalAgents": [
+        "DesignUXExpertAgent",
+        "AI/ML Expert Agent",
+        "LocalizationServicesOptimizer"
+      ],
+      "excludedAgents": [],
+      "reasoning": "Backend-heavy features require backend expertise, frontend integration, security, and performance optimization",
+      "workflow": [
+        "BackendExpertAgent analyzes backend requirements and architecture",
+        "Security Expert Agent reviews backend security implications",
+        "FrontEndExpertAgent reviews frontend integration requirements",
+        "PerformanceOptimizer analyzes backend performance impact",
+        "AI/ML Expert Agent suggests AI-powered backend features (optional)",
+        "BackendExpertAgent designs backend architecture and APIs",
+        "Security Expert Agent ensures backend security implementation",
+        "FrontEndExpertAgent plans frontend integration approach",
+        "PerformanceOptimizer optimizes backend performance",
+        "BackendExpertAgent implements backend services and APIs",
+        "FrontEndExpertAgent implements frontend integration",
+        "Security Expert Agent validates security implementation",
+        "PerformanceOptimizer validates performance optimization",
+        "DesignUXExpertAgent reviews integration UX (if UI changes)",
+        "Final collaborative review"
+      ]
+    },
     "innovationAndStrategy": {
       "description": "Innovation-focused tasks requiring creative ideation and strategic thinking",
       "requiredAgents": [
@@ -937,6 +972,26 @@
     }
   },
   "agentRelevanceScoring": {
+    "BackendExpertAgent": [
+      "backend",
+      "API",
+      "server",
+      "database",
+      "cloud",
+      "infrastructure",
+      "microservices",
+      "authentication",
+      "authorization",
+      "caching",
+      "performance",
+      "scalability",
+      "security",
+      "deployment",
+      "monitoring",
+      "logging",
+      "testing",
+      "CI/CD"
+    ],
     "DesignUXExpertAgent": [
       "UI",
       "UX",
@@ -1187,6 +1242,29 @@
         ],
         "reasoning": "Security requires specialized security expertise"
       },
+      "backend": {
+        "keywords": [
+          "backend",
+          "API",
+          "server",
+          "database",
+          "cloud",
+          "infrastructure",
+          "microservices",
+          "authentication",
+          "authorization",
+          "caching",
+          "deployment",
+          "monitoring",
+          "logging",
+          "testing",
+          "CI/CD"
+        ],
+        "recommendedAgents": [
+          "BackendExpertAgent"
+        ],
+        "reasoning": "Backend development requires specialized backend expertise"
+      },
       "ai": {
         "keywords": [
           "AI",
@@ -1414,6 +1492,11 @@
     }
   },
   "agentInvocationPatterns": {
+    "BackendExpertAgent": {
+      "invocationFormat": "BackendExpertAgent: Review backend architecture and implementation of {component} focusing on {specificAspects}",
+      "expectedResponse": "Backend analysis, API design suggestions, database optimization, security recommendations",
+      "responseFormat": "## 🖥️ BackendExpertAgent Analysis\n### Backend Assessment\n{backendAnalysis}\n### API Design Recommendations\n{apiDesignSuggestions}\n### Database Optimization\n{databaseOptimization}\n### Security Recommendations\n{securityRecommendations}"
+    },
     "DesignUXExpertAgent": {
       "invocationFormat": "DesignUXExpertAgent: Analyze UX/design aspects of {component} focusing on {specificAspects}",
       "expectedResponse": "UX analysis, design recommendations, accessibility suggestions",

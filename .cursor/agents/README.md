@@ -19,6 +19,11 @@
 - **Use for**: Technical implementation, code reviews, performance optimization
 - **Invoke with**: `FrontEndExpertAgent: [implementation request]`
 
+#### **BackendExpertAgent** (`.cursor/agents/backend.json`) ⭐ **NEW**
+- **Role**: Expert Backend Developer specializing in API design, database architecture, and server-side technologies
+- **Use for**: Backend development, API design, database optimization, cloud infrastructure, security implementation
+- **Invoke with**: `BackendExpertAgent: [backend request]`
+
 #### **ReusabilityExpertAgent** (`.cursor/agents/reusability.json`)
 - **Role**: Expert in DRY principles, component reusability, and code consistency
 - **Use for**: Component refactoring, architecture improvements, code organization
@@ -41,6 +46,10 @@
   - `TasksAgent: Track implementation for [component]`
 
 ### Advanced Agents (Referenced in CollaborativeAgent)
+
+#### **BackendExpertAgent**
+- **Role**: Expert in backend development, API design, and server-side technologies
+- **Use for**: Backend architecture, API development, database design, cloud infrastructure
 
 #### **LocalizationServicesOptimizer**
 - **Role**: Optimizes location services and geolocation features
@@ -108,6 +117,23 @@ TasksAgent: Track implementation for WikipediaService
 ```
 TasksAgent: Search improvements by priority high
 TasksAgent: Filter improvements by status completed
+```
+
+### **BackendExpertAgent Examples:**
+
+#### API Design Review:
+```
+BackendExpertAgent: Review API design for POI discovery endpoints
+```
+
+#### Database Optimization:
+```
+BackendExpertAgent: Optimize database schema for location-based queries
+```
+
+#### Backend Architecture:
+```
+BackendExpertAgent: Design microservices architecture for travel app backend
 ```
 
 ### **CollaborativeAgent with TasksAgent:**
