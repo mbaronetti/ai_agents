@@ -238,7 +238,8 @@
       "InnovationExpertAgent",
       "AI/ML Expert Agent",
       "Security Expert Agent",
-      "TasksAgent"
+      "TasksAgent",
+      "ProductManagerAgent"
     ],
     "keyFeatures": [
       "POI Discovery",
@@ -675,6 +676,7 @@
     "uiComponentDevelopment": {
       "description": "Pure UI components with no location or performance critical requirements",
       "requiredAgents": [
+        "ProductManagerAgent",
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
         "ReusabilityExpertAgent"
@@ -689,6 +691,7 @@
       ],
       "reasoning": "UI components don't require location services or AI features, but security should be considered",
       "workflow": [
+        "ProductManagerAgent drafts PRD, user stories, and acceptance criteria (concise)",
         "DesignUXExpertAgent creates initial design",
         "FrontEndExpertAgent reviews technical feasibility",
         "ReusabilityExpertAgent analyzes component reusability",
@@ -703,6 +706,7 @@
     "locationHeavyFeature": {
       "description": "Features heavily dependent on location services and geolocation",
       "requiredAgents": [
+        "ProductManagerAgent",
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
         "LocalizationServicesOptimizer",
@@ -716,6 +720,7 @@
       "excludedAgents": [],
       "reasoning": "Location features require all perspectives including security for location data protection",
       "workflow": [
+        "ProductManagerAgent drafts PRD, user stories, KPIs, and constraints",
         "DesignUXExpertAgent creates location-aware design",
         "LocalizationServicesOptimizer reviews location service requirements",
         "Security Expert Agent reviews location data security",
@@ -733,6 +738,7 @@
     "performanceCriticalFeature": {
       "description": "Features with high performance requirements or complex rendering",
       "requiredAgents": [
+        "ProductManagerAgent",
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
         "PerformanceOptimizer"
@@ -745,6 +751,7 @@
       "excludedAgents": [],
       "reasoning": "Performance-critical features need technical and UX optimization",
       "workflow": [
+        "ProductManagerAgent defines success metrics and constraints for performance goals",
         "PerformanceOptimizer analyzes performance requirements",
         "DesignUXExpertAgent creates performance-aware design",
         "FrontEndExpertAgent reviews technical implementation",
@@ -759,6 +766,7 @@
     "componentRefactoring": {
       "description": "Refactoring existing components for better architecture",
       "requiredAgents": [
+        "ProductManagerAgent",
         "ReusabilityExpertAgent",
         "FrontEndExpertAgent"
       ],
@@ -773,6 +781,7 @@
       ],
       "reasoning": "Refactoring focuses on architecture, not location services or AI",
       "workflow": [
+        "ProductManagerAgent defines refactor goals, scope, and acceptance criteria",
         "ReusabilityExpertAgent analyzes current component for reusability",
         "FrontEndExpertAgent reviews technical implementation",
         "Security Expert Agent reviews security implications (optional)",
@@ -791,6 +800,7 @@
         "Security Expert Agent"
       ],
       "optionalAgents": [
+        "ProductManagerAgent",
         "FrontEndExpertAgent",
         "DesignUXExpertAgent",
         "AI/ML Expert Agent"
@@ -800,6 +810,7 @@
       ],
       "reasoning": "Location optimization focuses on services, performance, and security",
       "workflow": [
+        "ProductManagerAgent defines KPIs and success thresholds for optimization",
         "LocalizationServicesOptimizer analyzes current location services",
         "Security Expert Agent reviews location data security",
         "PerformanceOptimizer reviews location performance impact",
@@ -815,6 +826,7 @@
     "comprehensiveFeatureDevelopment": {
       "description": "Complex features requiring all agent perspectives",
       "requiredAgents": [
+        "ProductManagerAgent",
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
         "BackendExpertAgent",
@@ -831,6 +843,7 @@
       "excludedAgents": [],
       "reasoning": "Complex features benefit from all expert perspectives including AI/ML and security, with optional tracking for long-term management",
       "workflow": [
+        "ProductManagerAgent creates initial PRD, milestones, and KPIs",
         "DesignUXExpertAgent creates initial design",
         "FrontEndExpertAgent reviews technical feasibility",
         "ReusabilityExpertAgent analyzes component reusability",
@@ -859,6 +872,7 @@
         "Security Expert Agent"
       ],
       "optionalAgents": [
+        "ProductManagerAgent",
         "PerformanceOptimizer",
         "ReusabilityExpertAgent",
         "LocalizationServicesOptimizer"
@@ -866,6 +880,7 @@
       "excludedAgents": [],
       "reasoning": "AI features need AI expertise, design for AI UX, technical implementation, and security",
       "workflow": [
+        "ProductManagerAgent defines AI feature goals, guardrails, and success metrics",
         "AI/ML Expert Agent analyzes AI requirements and capabilities",
         "DesignUXExpertAgent creates AI-powered UX design",
         "Security Expert Agent reviews AI security implications",
@@ -888,6 +903,7 @@
         "DesignUXExpertAgent"
       ],
       "optionalAgents": [
+        "ProductManagerAgent",
         "PerformanceOptimizer",
         "ReusabilityExpertAgent",
         "AI/ML Expert Agent"
@@ -895,6 +911,7 @@
       "excludedAgents": [],
       "reasoning": "Security-critical features need security expertise, technical implementation, and UX for security",
       "workflow": [
+        "ProductManagerAgent defines security goals, user impact, and acceptance criteria",
         "Security Expert Agent analyzes security requirements",
         "DesignUXExpertAgent creates security-aware UX design",
         "FrontEndExpertAgent reviews technical security implementation",
@@ -909,6 +926,7 @@
     "backendHeavyFeature": {
       "description": "Features heavily dependent on backend services, APIs, and server-side processing",
       "requiredAgents": [
+        "ProductManagerAgent",
         "BackendExpertAgent",
         "FrontEndExpertAgent",
         "Security Expert Agent",
@@ -922,6 +940,7 @@
       "excludedAgents": [],
       "reasoning": "Backend-heavy features require backend expertise, frontend integration, security, and performance optimization",
       "workflow": [
+        "ProductManagerAgent drafts PRD with API contracts, SLAs, and KPIs",
         "BackendExpertAgent analyzes backend requirements and architecture",
         "Security Expert Agent reviews backend security implications",
         "FrontEndExpertAgent reviews frontend integration requirements",
@@ -942,6 +961,7 @@
     "innovationAndStrategy": {
       "description": "Innovation-focused tasks requiring creative ideation and strategic thinking",
       "requiredAgents": [
+        "ProductManagerAgent",
         "InnovationExpertAgent",
         "DesignUXExpertAgent",
         "FrontEndExpertAgent",
@@ -957,6 +977,7 @@
       ],
       "reasoning": "Innovation tasks need creative ideation, design validation, technical feasibility, and AI capabilities",
       "workflow": [
+        "ProductManagerAgent defines problem framing, opportunity sizing, and success metrics",
         "InnovationExpertAgent generates innovative ideas and value propositions",
         "AI/ML Expert Agent suggests AI-powered innovations",
         "DesignUXExpertAgent reviews UX implications and design feasibility",
@@ -978,6 +999,7 @@
         "TasksAgent"
       ],
       "optionalAgents": [
+        "ProductManagerAgent",
         "CollaborativeAgent"
       ],
       "excludedAgents": [],
@@ -994,6 +1016,20 @@
     }
   },
   "agentRelevanceScoring": {
+    "ProductManagerAgent": [
+      "product",
+      "roadmap",
+      "priority",
+      "impact",
+      "effort",
+      "PRD",
+      "acceptance criteria",
+      "user story",
+      "KPI",
+      "experiment",
+      "scope",
+      "requirements"
+    ],
     "ArchitectAgent": [
       "architecture",
       "contracts",
@@ -1142,6 +1178,24 @@
   },
   "automatedAgentRecommendation": {
     "recommendationRules": {
+      "product": {
+        "keywords": [
+          "product",
+          "PRD",
+          "user story",
+          "acceptance criteria",
+          "requirements",
+          "roadmap",
+          "priority",
+          "KPI",
+          "experiment",
+          "scope"
+        ],
+        "recommendedAgents": [
+          "ProductManagerAgent"
+        ],
+        "reasoning": "Product definition and prioritization should be led by ProductManagerAgent before design/implementation"
+      },
       "accessibility": {
         "keywords": [
           "accessibility",
@@ -1530,6 +1584,11 @@
     }
   },
   "agentInvocationPatterns": {
+    "ProductManagerAgent": {
+      "invocationFormat": "ProductManagerAgent: Draft PRD and user stories for {component} focusing on {goals}",
+      "expectedResponse": "PRD summary, prioritized user stories with acceptance criteria, KPIs, risks, and scope recommendations",
+      "responseFormat": "## 🧭 ProductManagerAgent Deliverables\n### PRD Summary\n{prd}\n### Prioritized User Stories\n{stories}\n### KPIs & Experiments\n{metrics}\n### Risks & Decisions\n{risks}"
+    },
     "BackendExpertAgent": {
       "invocationFormat": "BackendExpertAgent: Review backend architecture and implementation of {component} focusing on {specificAspects}",
       "expectedResponse": "Backend analysis, API design suggestions, database optimization, security recommendations",

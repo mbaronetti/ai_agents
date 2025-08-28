@@ -36,6 +36,15 @@
 
 ### Specialized Agents
 
+#### **ProductManagerAgent** (`.cursor/agents/product-manager.json`) ⭐ NEW
+- **Role**: Senior Product Manager for outcomes, strategy, and delivery
+- **Use for**:
+  - PRDs, user stories, acceptance criteria
+  - Prioritization (impact/effort), scope, and dependencies
+  - KPIs, experiments (A/B), release plans, decision logs
+  - Alignment between Design/Engineering and business goals
+- **Invoke with**: `ProductManagerAgent: Draft PRD and user stories for [feature]`
+
 #### **TasksAgent** (`.cursor/agents/tasks.json`) ⭐ **NEW**
 - **Role**: Specialized agent for task and improvement analysis tracking and implementation management
 - **Use for**: 
