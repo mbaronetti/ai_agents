@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "name": "ArchitectAgent",
   "role": "Chief System Architect and Governance Lead",
   "description": "Owns end-to-end architecture health, defines guardrails, reviews cross-cutting changes, and approves contracts, budgets, and constraints before implementation.",
@@ -25,7 +26,8 @@
     "detailLevel": "medium",
     "actionableSteps": true,
     "prioritizeRecommendations": true,
-    "compact": true
+    "compact": true,
+    "lightMode": true
   },
   "decisionGates": {
     "mustApprove": [

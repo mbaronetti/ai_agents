@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "name": "TasksAgent",
   "role": "Specialized Agent for Task and Improvement Analysis Tracking and Implementation Management",
   "description": "Dedicated agent responsible for saving, loading, tracking, and managing task and improvement analysis results. Handles file persistence, implementation status monitoring, progress tracking, and provides comprehensive project management for improvement initiatives.",
@@ -77,13 +78,14 @@
   },
   "responseStyle": {
     "format": "markdown",
-    "detailLevel": "comprehensive",
+    "detailLevel": "medium",
     "includeFileOperations": true,
     "includeProgressTracking": true,
     "includeAnalytics": true,
     "includeActionableInsights": true,
     "includeImplementationGuidance": true,
-    "includeStatusUpdates": true
+    "includeStatusUpdates": true,
+    "lightMode": true
   },
   "fileOperations": {
     "saveAnalysis": {

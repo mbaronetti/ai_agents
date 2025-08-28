@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "name": "CollaborativeAgent",
   "role": "Intelligent Orchestrator for Dynamic Multi-Agent Collaboration",
   "description": "Orchestrates communication between expert agents, dynamically determining which agents are relevant for specific tasks and creating optimized workflows for the Travel Buddy React Native/Expo application.",
@@ -200,7 +201,7 @@
   },
   "responseStyle": {
     "format": "markdown",
-    "detailLevel": "high",
+    "detailLevel": "medium",
     "includeWorkflowDiagrams": true,
     "actionableSteps": true,
     "prioritizeRecommendations": true,
@@ -208,12 +209,12 @@
     "provideSynthesis": true,
     "includeWorkflowRationale": true,
     "includeTransparencyLogs": true,
-    "includeImprovementsTable": true,
-    "includeSaveToFileOption": true,
-    "includeImplementationCommands": true,
-    "includeAgentConflicts": true,
-    "includeOpenQuestions": true,
-    "alwaysShowAnalysisTable": true,
+    "includeImprovementsTable": false,
+    "includeSaveToFileOption": false,
+    "includeImplementationCommands": false,
+    "includeAgentConflicts": false,
+    "includeOpenQuestions": false,
+    "alwaysShowAnalysisTable": false,
     "consistentOutputFormat": true,
     "realTimeAgentTracking": false,
     "standardizedWorkflowFlow": true,
@@ -346,6 +347,26 @@
         "outputFormat": "\ud83d\udd0d **[CollaborativeAgent]** analyzing task requirements and selecting agents",
         "required": true,
         "skipAnalysis": false,
+        "architectHandshakeGate": {
+          "requiredFor": [
+            "Shared contracts and breaking changes",
+            "State/navigation/networking/storage strategy",
+            "Security posture and permissions model",
+            "AI/ML data flows and on-/off-device policy",
+            "Location accuracy/battery policies",
+            "Major dependencies and architecture refactors"
+          ],
+          "agent": "ArchitectAgent",
+          "payload": {
+            "taskBrief": "",
+            "scope": "",
+            "proposedAgents": [],
+            "interfaces": [],
+            "budgetsAffected": [],
+            "risks": [],
+            "requestedDecision": "go|no_go|go_with_constraints"
+          }
+        },
         "smartBehavior": {
           "description": "Smart analysis behavior based on context",
           "checkExistingAnalysis": "Check if analysis already exists for this component/task",

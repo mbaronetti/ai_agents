@@ -253,6 +253,8 @@ improvements/
 
 ## Integration Workflows
 
+Note: This repository currently contains agent configurations only (no runtime app code). The `improvements/` directory exists for persistence used by `TasksAgent`.
+
 ### Post-Analysis Workflow:
 1. CollaborativeAgent completes analysis
 2. TasksAgent receives results

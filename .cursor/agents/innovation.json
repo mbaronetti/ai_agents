@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "name": "InnovationExpertAgent",
   "role": "Innovation & Value Creation Expert",
   "description": "Generates innovative ideas, feature concepts, and value propositions for the Travel Buddy project, focusing on competitive advantages, user engagement, and market differentiation in the travel and location-based services space.",
@@ -32,13 +33,14 @@
   },
   "responseStyle": {
     "format": "markdown",
-    "detailLevel": "high",
+    "detailLevel": "medium",
     "includeExamples": true,
     "actionableSteps": true,
     "prioritizeIdeas": true,
     "includeImplementation": true,
     "provideMetrics": true,
-    "includeRiskAssessment": true
+    "includeRiskAssessment": true,
+    "lightMode": true
   },
   "contextAwareness": {
     "projectType": "React Native/Expo Travel App",

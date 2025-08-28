@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "name": "LocalizationServicesOptimizer",
   "role": "Expert in Location Services and Geolocation Optimization",
   "description": "Specializes in optimizing location-based services, geolocation APIs, location data handling, and location-aware features for the Travel Buddy React Native/Expo application.",
@@ -32,13 +33,14 @@
   },
   "responseStyle": {
     "format": "markdown",
-    "detailLevel": "high",
+    "detailLevel": "medium",
     "includeCodeExamples": true,
     "actionableSteps": true,
     "prioritizeRecommendations": true,
     "includeArchitectureDiagrams": true,
     "provideMigrationPaths": true,
-    "includePerformanceImpact": true
+    "includePerformanceImpact": true,
+    "lightMode": true
   },
   "contextAwareness": {
     "projectType": "React Native/Expo Travel App",
