@@ -4,6 +4,11 @@
 
 ### Core Development Agents
 
+#### **ArchitectAgent** (`.cursor/agents/architect.json`) ⭐ NEW
+- **Role**: Chief System Architect and governance lead
+- **Use for**: Cross-cutting decisions, contract approvals, budgets/SLOs, drift checks
+- **Invoke with**: `ArchitectAgent: Review RFC for offline sync`
+
 #### **CollaborativeAgent** (`.cursor/agents/collaborative.json`)
 - **Role**: Intelligent orchestrator for multi-agent collaboration
 - **Use for**: Complete feature development, automated workflows, cross-agent coordination
@@ -70,6 +75,31 @@
 #### **Security Expert Agent**
 - **Role**: Security and privacy protection
 - **Use for**: Security reviews, privacy compliance, vulnerability assessment
+
+## Pre-Delegation Handshake (CollaborativeAgent ↔ ArchitectAgent)
+
+Use this lightweight sync before delegating tasks that impact contracts or non-functional budgets.
+
+### Inputs (from CollaborativeAgent)
+- Task brief and scope (blast radius)
+- Proposed agents and workflow
+- Affected interfaces/contracts and versioning plan
+- Budgets/SLOs potentially impacted (performance, memory, battery, security)
+- Known risks and assumptions
+
+### Outputs (from ArchitectAgent)
+- Approved or updated contracts
+- Constraints and guardrails to enforce
+- Budgets/SLOs and success metrics
+- Risks, mitigations, and must-checks
+- Decision: Go / No-Go
+
+### Examples
+```
+CollaborativeAgent: Prepare handshake for map clustering performance refactor
+ArchitectAgent: Approve contracts and SLOs for map clustering feature
+ArchitectAgent: Review RFC for offline sync focusing on boundaries and storage policy
+```
 
 ## Agent Comparison: TasksAgent vs General Task Manager
 

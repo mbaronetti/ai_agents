@@ -227,6 +227,7 @@
   "contextAwareness": {
     "projectType": "React Native/Expo Travel App",
     "agentEcosystem": [
+      "ArchitectAgent",
       "DesignUXExpertAgent",
       "FrontEndExpertAgent",
       "BackendExpertAgent",
@@ -972,6 +973,22 @@
     }
   },
   "agentRelevanceScoring": {
+    "ArchitectAgent": [
+      "architecture",
+      "contracts",
+      "state",
+      "navigation",
+      "networking",
+      "storage",
+      "security posture",
+      "AI data flows",
+      "permissions",
+      "budgets",
+      "SLOs",
+      "RFC",
+      "ADR",
+      "drift"
+    ],
     "BackendExpertAgent": [
       "backend",
       "API",
