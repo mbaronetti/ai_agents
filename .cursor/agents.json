@@ -1,64 +1,142 @@
 {
+  "version": "1.0.0",
+  "name": "AI Agents Team",
+  "description": "A comprehensive team of specialized AI agents for React Native/Expo application development",
   "agents": [
     {
-      "id": "designer",
-      "name": "DesignUXExpertAgent",
-      "description": "Elite UI/UX Design & Research Expert for design critiques and improvements",
-      "config": "./agents/designer.json"
-    },
-    {
-      "id": "frontend", 
-      "name": "FrontEndExpertAgent",
-      "description": "Elite React Native/Expo Development Expert for code analysis and optimization",
-      "config": "./agents/frontend.json"
-    },
-    {
-      "id": "reusability",
-      "name": "ReusabilityExpertAgent", 
-      "description": "Expert in DRY principles and component reusability",
-      "config": "./agents/reusability.json"
-    },
-    {
-      "id": "localization",
-      "name": "LocalizationServicesOptimizer",
-      "description": "Expert in location services and geolocation optimization",
-      "config": "./agents/localization.json"
-    },
-    {
-      "id": "performance",
-      "name": "PerformanceOptimizer",
-      "description": "Expert in React Native/Expo performance optimization",
-      "config": "./agents/performance.json"
-    },
-    {
-      "id": "collaborative",
       "name": "CollaborativeAgent",
-      "description": "Intelligent Orchestrator for Dynamic Multi-Agent Collaboration",
-      "config": "./agents/collaborative.json"
+      "role": "Intelligent Orchestrator",
+      "description": "Orchestrates communication between expert agents for optimized workflows",
+      "file": ".cursor/agents/collaborative.json"
     },
     {
-      "id": "innovation",
+      "name": "ProductManagerAgent",
+      "role": "Product Strategy & Management",
+      "description": "Drives clarity, prioritization, and measurable outcomes",
+      "file": ".cursor/agents/product-manager.json"
+    },
+    {
+      "name": "ArchitectAgent",
+      "role": "System Architecture & Design",
+      "description": "Expert in system architecture, technical design, and architectural decisions",
+      "file": ".cursor/agents/architect.json"
+    },
+    {
+      "name": "BackendExpertAgent",
+      "role": "Backend Development & APIs",
+      "description": "Expert in backend services, APIs, databases, and server-side development",
+      "file": ".cursor/agents/backend.json"
+    },
+    {
+      "name": "DesignUXExpertAgent",
+      "role": "UI/UX Design & Research",
+      "description": "Expert in mobile-first design, user experience, and accessibility",
+      "file": ".cursor/agents/designer.json"
+    },
+    {
+      "name": "FrontEndExpertAgent",
+      "role": "Frontend Development",
+      "description": "Expert in React Native/Expo development and frontend implementation",
+      "file": ".cursor/agents/frontend.json"
+    },
+    {
+      "name": "ReusabilityExpertAgent",
+      "role": "Component Architecture & Reusability",
+      "description": "Expert in DRY principles, component reusability, and code consistency",
+      "file": ".cursor/agents/reusability.json"
+    },
+    {
+      "name": "LocalizationServicesOptimizer",
+      "role": "Location Services & Geolocation",
+      "description": "Expert in location services and geolocation optimization",
+      "file": ".cursor/agents/location.json"
+    },
+    {
+      "name": "PerformanceOptimizer",
+      "role": "Performance Optimization",
+      "description": "Expert in performance optimization, memory management, and rendering efficiency",
+      "file": ".cursor/agents/performance.json"
+    },
+    {
       "name": "InnovationExpertAgent",
-      "description": "Generates innovative ideas and value-adding features for competitive advantage",
-      "config": "./agents/innovation.json"
+      "role": "Innovation & Value Creation",
+      "description": "Expert in creative ideation, competitive analysis, and strategic innovation",
+      "file": ".cursor/agents/innovation.json"
     },
     {
-      "id": "ai-ml",
       "name": "AI/ML Expert Agent",
-      "description": "Elite AI/ML Integration & Intelligence Expert for intelligent features and AI-powered experiences",
-      "config": "./agents/ai-ml.json"
+      "role": "AI/ML Integration Specialist",
+      "description": "Expert in AI/ML integration, intelligent features, and predictive capabilities",
+      "file": ".cursor/agents/ai-ml.json"
     },
     {
-      "id": "security",
       "name": "Security Expert Agent",
-      "description": "Elite Mobile Security & Privacy Expert for comprehensive security and privacy protection",
-      "config": "./agents/security.json"
+      "role": "Security & Privacy Specialist",
+      "description": "Expert in security, privacy, encryption, and compliance",
+      "file": ".cursor/agents/security.json"
     },
     {
-      "id": "tasks",
       "name": "TasksAgent",
-      "description": "Specialized Agent for Task and Improvement Analysis Tracking and Implementation Management",
-      "config": "./agents/tasks.json"
+      "role": "Task Management & Analytics",
+      "description": "Expert in tracking, managing, and analyzing improvement initiatives",
+      "file": ".cursor/agents/tasks.json"
     }
-  ]
+  ],
+  "workflows": {
+    "uiComponentDevelopment": {
+      "description": "Pure UI components with no location or performance critical requirements",
+      "agents": ["ProductManagerAgent", "DesignUXExpertAgent", "FrontEndExpertAgent", "ReusabilityExpertAgent"]
+    },
+    "locationHeavyFeature": {
+      "description": "Features heavily dependent on location services and geolocation",
+      "agents": ["ProductManagerAgent", "DesignUXExpertAgent", "FrontEndExpertAgent", "LocalizationServicesOptimizer", "PerformanceOptimizer", "Security Expert Agent"]
+    },
+    "performanceCriticalFeature": {
+      "description": "Features with high performance requirements or complex rendering",
+      "agents": ["ProductManagerAgent", "DesignUXExpertAgent", "FrontEndExpertAgent", "PerformanceOptimizer"]
+    },
+    "componentRefactoring": {
+      "description": "Refactoring existing components for better architecture",
+      "agents": ["ProductManagerAgent", "ReusabilityExpertAgent", "FrontEndExpertAgent"]
+    },
+    "locationServiceOptimization": {
+      "description": "Optimizing location services and geolocation features",
+      "agents": ["LocalizationServicesOptimizer", "PerformanceOptimizer", "Security Expert Agent"]
+    },
+    "comprehensiveFeatureDevelopment": {
+      "description": "Complex features requiring all agent perspectives",
+      "agents": ["ProductManagerAgent", "DesignUXExpertAgent", "FrontEndExpertAgent", "BackendExpertAgent", "ReusabilityExpertAgent", "LocalizationServicesOptimizer", "PerformanceOptimizer", "AI/ML Expert Agent", "Security Expert Agent"]
+    },
+    "aiPoweredFeature": {
+      "description": "Features requiring AI/ML integration and intelligent capabilities",
+      "agents": ["AI/ML Expert Agent", "DesignUXExpertAgent", "FrontEndExpertAgent", "Security Expert Agent"]
+    },
+    "securityCriticalFeature": {
+      "description": "Features requiring advanced security and privacy protection",
+      "agents": ["Security Expert Agent", "FrontEndExpertAgent", "DesignUXExpertAgent"]
+    },
+    "backendHeavyFeature": {
+      "description": "Features heavily dependent on backend services, APIs, and server-side processing",
+      "agents": ["ProductManagerAgent", "BackendExpertAgent", "FrontEndExpertAgent", "Security Expert Agent", "PerformanceOptimizer"]
+    },
+    "innovationAndStrategy": {
+      "description": "Innovation-focused tasks requiring creative ideation and strategic thinking",
+      "agents": ["ProductManagerAgent", "InnovationExpertAgent", "DesignUXExpertAgent", "FrontEndExpertAgent", "AI/ML Expert Agent"]
+    },
+    "improvementTrackingAndManagement": {
+      "description": "Tasks focused on tracking, managing, and analyzing improvement initiatives",
+      "agents": ["TasksAgent"]
+    }
+  },
+  "invocation": {
+    "primary": "CollaborativeAgent: [your feature request]",
+    "individual": "[AgentName]: [specific task]",
+    "examples": [
+      "CollaborativeAgent: Develop a new user profile component",
+      "CollaborativeAgent: Optimize location services for our app",
+      "CollaborativeAgent: Implement AI-powered recommendations",
+      "DesignUXExpertAgent: Analyze UX for our login screen",
+      "PerformanceOptimizer: Optimize our list rendering performance"
+    ]
+  }
 } 

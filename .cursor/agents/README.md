@@ -1,4 +1,4 @@
-# Travel Buddy Agent System
+# React Native/Expo Agent System
 
 ## Available Agents
 
@@ -13,6 +13,15 @@
 - **Role**: Intelligent orchestrator for multi-agent collaboration
 - **Use for**: Complete feature development, automated workflows, cross-agent coordination
 - **Invoke with**: `CollaborativeAgent: [your feature request]`
+
+#### **ProductManagerAgent** (`.cursor/agents/product-manager.json`) ⭐ NEW
+- **Role**: Senior Product Manager for outcomes, strategy, and delivery
+- **Use for**:
+  - PRDs, user stories, acceptance criteria
+  - Prioritization (impact/effort), scope, and dependencies
+  - KPIs, experiments (A/B), release plans, decision logs
+  - Alignment between Design/Engineering and business goals
+- **Invoke with**: `ProductManagerAgent: Draft PRD and user stories for [feature]`
 
 #### **DesignUXExpertAgent** (`.cursor/agents/designer.json`)
 - **Role**: Expert UI/UX Designer specializing in mobile-first design
@@ -36,15 +45,6 @@
 
 ### Specialized Agents
 
-#### **ProductManagerAgent** (`.cursor/agents/product-manager.json`) ⭐ NEW
-- **Role**: Senior Product Manager for outcomes, strategy, and delivery
-- **Use for**:
-  - PRDs, user stories, acceptance criteria
-  - Prioritization (impact/effort), scope, and dependencies
-  - KPIs, experiments (A/B), release plans, decision logs
-  - Alignment between Design/Engineering and business goals
-- **Invoke with**: `ProductManagerAgent: Draft PRD and user stories for [feature]`
-
 #### **TasksAgent** (`.cursor/agents/tasks.json`) ⭐ **NEW**
 - **Role**: Specialized agent for task and improvement analysis tracking and implementation management
 - **Use for**: 
@@ -61,13 +61,9 @@
 
 ### Advanced Agents (Referenced in CollaborativeAgent)
 
-#### **BackendExpertAgent**
-- **Role**: Expert in backend development, API design, and server-side technologies
-- **Use for**: Backend architecture, API development, database design, cloud infrastructure
-
 #### **LocalizationServicesOptimizer**
 - **Role**: Optimizes location services and geolocation features
-- **Use for**: Location-based features, GPS optimization, POI discovery
+- **Use for**: Location-based features, GPS optimization, location services (if applicable)
 
 #### **PerformanceOptimizer**
 - **Role**: Performance optimization and monitoring
@@ -162,17 +158,17 @@ TasksAgent: Filter improvements by status completed
 
 #### API Design Review:
 ```
-BackendExpertAgent: Review API design for POI discovery endpoints
+BackendExpertAgent: Review API design for user authentication endpoints
 ```
 
 #### Database Optimization:
 ```
-BackendExpertAgent: Optimize database schema for location-based queries
+BackendExpertAgent: Optimize database schema for user profile queries
 ```
 
 #### Backend Architecture:
 ```
-BackendExpertAgent: Design microservices architecture for travel app backend
+BackendExpertAgent: Design microservices architecture for mobile app backend
 ```
 
 ### **CollaborativeAgent with TasksAgent:**
@@ -194,7 +190,7 @@ CollaborativeAgent: Load existing analysis for CategoryBadge and continue improv
 improvements/
 ├── wikipedia-service-improvements.json
 ├── category-badge-improvements.json
-├── poi-card-improvements.json
+├── user-profile-improvements.json
 └── [component-name]-improvements.json
 ```
 

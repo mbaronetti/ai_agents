@@ -44,7 +44,7 @@ log_agent_selection = true
 # ================================================
 
 # Original rules preserved for reference:
-# Cursor Rules for Travel Buddy Project
+# Cursor Rules for React Native/Expo Applications
 
 ## Available Agents
 
@@ -58,7 +58,7 @@ log_agent_selection = true
   - Performance optimization workflows
   - Security-focused development
   - AI/ML integration
-  - Location service optimization
+  - Location service optimization (if applicable)
 - **Invoke with**: "CollaborativeAgent: [your feature request]"
 - **Workflow**: Dynamically selects relevant agents based on task requirements
 - **Best for**: Complete feature development, automated design reviews, iterative improvements, performance optimization, security implementation
@@ -66,6 +66,9 @@ log_agent_selection = true
 ### Individual Agents
 The following agents are defined in `.cursor/agents/` and can be invoked individually:
 
+- **ProductManagerAgent** (`.cursor/agents/product-manager.json`): Senior Product Manager for outcomes, strategy, and delivery
+- **ArchitectAgent** (`.cursor/agents/architect.json`): Expert in system architecture, technical design, and architectural decisions
+- **BackendExpertAgent** (`.cursor/agents/backend.json`): Expert in backend services, APIs, databases, and server-side development
 - **DesignUXExpertAgent** (`.cursor/agents/designer.json`): Expert UI/UX Designer specializing in mobile-first design
 - **FrontEndExpertAgent** (`.cursor/agents/frontend.json`): Expert Frontend Developer specializing in React Native/Expo
 - **ReusabilityExpertAgent** (`.cursor/agents/reusability.json`): Expert in DRY principles, component reusability, and code consistency
@@ -87,15 +90,18 @@ The CollaborativeAgent automatically determines which agents are relevant based 
 - **Performance requirements** (light mode vs. full analysis)
 
 ### Agent Relevance Scoring:
-- **DesignUXExpertAgent**: UI, UX, design, user experience, interface, visual, layout
-- **FrontEndExpertAgent**: implementation, technical, code, react native, expo, development
-- **ReusabilityExpertAgent**: refactor, component, reuse, DRY, architecture, maintainability
-- **LocalizationServicesOptimizer**: location, GPS, geolocation, distance, proximity, map, POI
-- **PerformanceOptimizer**: performance, speed, optimization, memory, bundle, rendering
-- **InnovationExpertAgent**: innovation, new feature, idea, value, competitive, market, trend
-- **AI/ML Expert Agent**: AI, ML, machine learning, artificial intelligence, prediction, recommendation
-- **Security Expert Agent**: security, privacy, encryption, authentication, GDPR, CCPA, compliance
-- **TasksAgent**: track, save, load, progress, status, implementation, file, improvement
+- **ProductManagerAgent**: product, roadmap, priority, impact, effort, PRD, acceptance criteria, user story, KPI, experiment, scope, requirements
+- **ArchitectAgent**: architecture, contracts, state, navigation, networking, storage, security posture, AI data flows, permissions, budgets, SLOs, RFC, ADR, drift
+- **BackendExpertAgent**: backend, API, server, database, cloud, infrastructure, microservices, authentication, authorization, caching, performance, scalability, security, deployment, monitoring, logging, testing, CI/CD
+- **DesignUXExpertAgent**: UI, UX, design, user experience, interface, visual, layout, button, component, screen
+- **FrontEndExpertAgent**: implementation, technical, code, react native, expo, development, component, feature, functionality
+- **ReusabilityExpertAgent**: refactor, component, reuse, DRY, architecture, maintainability, code, structure
+- **LocalizationServicesOptimizer**: location, GPS, geolocation, distance, proximity, map, POI, discovery, navigation
+- **PerformanceOptimizer**: performance, speed, optimization, memory, bundle, rendering, list, heavy, slow
+- **InnovationExpertAgent**: innovation, new feature, idea, value, competitive, market, trend, differentiation, unique, novel, creative, strategy
+- **AI/ML Expert Agent**: AI, ML, machine learning, artificial intelligence, prediction, recommendation, personalization, intelligence, smart, automated
+- **Security Expert Agent**: security, privacy, encryption, authentication, GDPR, CCPA, compliance, protection, secure, vulnerability
+- **TasksAgent**: track, save, load, progress, status, implementation, file, improvement, analytics, report, roadmap, monitor, manage, task
 
 ## Advanced Workflow Patterns
 
@@ -103,156 +109,165 @@ The CollaborativeAgent automatically determines which agents are relevant based 
 
 #### **UI Component Development:**
 ```
-CollaborativeAgent: Develop a new [UI component] for our Travel Buddy app
+CollaborativeAgent: Develop a new [UI component] for our React Native/Expo app
 ```
 **Automated Process:**
-1. DesignUXExpertAgent creates initial design
-2. FrontEndExpertAgent reviews technical feasibility
-3. ReusabilityExpertAgent analyzes component reusability
-4. Security Expert Agent reviews security implications (optional)
-5. DesignUXExpertAgent refines design based on feedback
-6. FrontEndExpertAgent implements with reusable patterns
-7. ReusabilityExpertAgent validates DRY principles
-8. PerformanceOptimizer provides basic performance review (optional)
-9. Final collaborative review
+1. ProductManagerAgent drafts PRD, user stories, and acceptance criteria
+2. DesignUXExpertAgent creates initial design
+3. FrontEndExpertAgent reviews technical feasibility
+4. ReusabilityExpertAgent analyzes component reusability
+5. Security Expert Agent reviews security implications (optional)
+6. DesignUXExpertAgent refines design based on feedback
+7. FrontEndExpertAgent implements with reusable patterns
+8. ReusabilityExpertAgent validates DRY principles
+9. PerformanceOptimizer provides basic performance review (optional)
+10. Final collaborative review
 
 #### **Location-Heavy Feature Development:**
 ```
-CollaborativeAgent: Develop a location-based [feature] for our Travel Buddy app
+CollaborativeAgent: Develop a location-based [feature] for our React Native/Expo app
 ```
 **Automated Process:**
-1. DesignUXExpertAgent creates location-aware design
-2. LocalizationServicesOptimizer reviews location service requirements
-3. Security Expert Agent reviews location data security
-4. FrontEndExpertAgent reviews technical implementation
-5. PerformanceOptimizer analyzes location performance impact
-6. AI/ML Expert Agent suggests AI-powered location features (optional)
-7. DesignUXExpertAgent refines location-based UX
-8. LocalizationServicesOptimizer optimizes location services
-9. Security Expert Agent ensures location data protection
-10. PerformanceOptimizer ensures location performance
-11. FrontEndExpertAgent implements with security and performance considerations
-12. Final collaborative review
+1. ProductManagerAgent drafts PRD, user stories, KPIs, and constraints
+2. DesignUXExpertAgent creates location-aware design
+3. LocalizationServicesOptimizer reviews location service requirements
+4. Security Expert Agent reviews location data security
+5. FrontEndExpertAgent reviews technical implementation
+6. PerformanceOptimizer analyzes location performance impact
+7. AI/ML Expert Agent suggests AI-powered location features (optional)
+8. DesignUXExpertAgent refines location-based UX
+9. LocalizationServicesOptimizer optimizes location services
+10. Security Expert Agent ensures location data protection
+11. PerformanceOptimizer ensures location performance
+12. FrontEndExpertAgent implements with security and performance considerations
+13. Final collaborative review
 
 #### **Performance-Critical Feature Development:**
 ```
-CollaborativeAgent: Develop a performance-critical [feature] for our Travel Buddy app
+CollaborativeAgent: Develop a performance-critical [feature] for our React Native/Expo app
 ```
 **Automated Process:**
-1. PerformanceOptimizer analyzes performance requirements
-2. DesignUXExpertAgent creates performance-aware design
-3. FrontEndExpertAgent reviews technical implementation
-4. PerformanceOptimizer suggests performance optimizations
-5. Security Expert Agent reviews security implications (optional)
-6. DesignUXExpertAgent validates UX impact of optimizations
-7. FrontEndExpertAgent implements with performance best practices
-8. PerformanceOptimizer validates final performance
-9. Final collaborative review
+1. ProductManagerAgent defines success metrics and constraints for performance goals
+2. PerformanceOptimizer analyzes performance requirements
+3. DesignUXExpertAgent creates performance-aware design
+4. FrontEndExpertAgent reviews technical implementation
+5. PerformanceOptimizer suggests performance optimizations
+6. Security Expert Agent reviews security implications (optional)
+7. DesignUXExpertAgent validates UX impact of optimizations
+8. FrontEndExpertAgent implements with performance best practices
+9. PerformanceOptimizer validates final performance
+10. Final collaborative review
 
 #### **AI-Powered Feature Development:**
 ```
-CollaborativeAgent: Develop an AI-powered [feature] for our Travel Buddy app
+CollaborativeAgent: Develop an AI-powered [feature] for our React Native/Expo app
 ```
 **Automated Process:**
-1. AI/ML Expert Agent analyzes AI requirements and capabilities
-2. DesignUXExpertAgent creates AI-powered UX design
-3. Security Expert Agent reviews AI security implications
-4. FrontEndExpertAgent reviews technical AI implementation
-5. PerformanceOptimizer analyzes AI performance impact
-6. AI/ML Expert Agent designs AI architecture and models
-7. DesignUXExpertAgent refines AI UX patterns
-8. Security Expert Agent ensures AI data protection
-9. FrontEndExpertAgent implements AI features with security
-10. PerformanceOptimizer optimizes AI performance
-11. AI/ML Expert Agent validates AI implementation
-12. Final collaborative review
+1. ProductManagerAgent defines AI feature goals, guardrails, and success metrics
+2. AI/ML Expert Agent analyzes AI requirements and capabilities
+3. DesignUXExpertAgent creates AI-powered UX design
+4. Security Expert Agent reviews AI security implications
+5. FrontEndExpertAgent reviews technical AI implementation
+6. PerformanceOptimizer analyzes AI performance impact
+7. AI/ML Expert Agent designs AI architecture and models
+8. DesignUXExpertAgent refines AI UX patterns
+9. Security Expert Agent ensures AI data protection
+10. FrontEndExpertAgent implements AI features with security
+11. PerformanceOptimizer optimizes AI performance
+12. AI/ML Expert Agent validates AI implementation
+13. Final collaborative review
 
 #### **Security-Critical Feature Development:**
 ```
-CollaborativeAgent: Develop a security-critical [feature] for our Travel Buddy app
+CollaborativeAgent: Develop a security-critical [feature] for our React Native/Expo app
 ```
 **Automated Process:**
-1. Security Expert Agent analyzes security requirements
-2. DesignUXExpertAgent creates security-aware UX design
-3. FrontEndExpertAgent reviews technical security implementation
-4. Security Expert Agent designs security architecture
-5. DesignUXExpertAgent refines security UX patterns
-6. FrontEndExpertAgent implements security features
-7. Security Expert Agent validates security implementation
-8. PerformanceOptimizer ensures security doesn't impact performance
-9. Final collaborative review
+1. ProductManagerAgent defines security goals, user impact, and acceptance criteria
+2. Security Expert Agent analyzes security requirements
+3. DesignUXExpertAgent creates security-aware UX design
+4. FrontEndExpertAgent reviews technical security implementation
+5. Security Expert Agent designs security architecture
+6. DesignUXExpertAgent refines security UX patterns
+7. FrontEndExpertAgent implements security features
+8. Security Expert Agent validates security implementation
+9. PerformanceOptimizer ensures security doesn't impact performance
+10. Final collaborative review
 
 #### **Component Refactoring:**
 ```
 CollaborativeAgent: Refactor our [component] to be more reusable and follow DRY principles
 ```
 **Automated Process:**
-1. ReusabilityExpertAgent analyzes current component for reusability
-2. FrontEndExpertAgent reviews technical implementation
-3. Security Expert Agent reviews security implications (optional)
-4. ReusabilityExpertAgent creates reusable component design
-5. FrontEndExpertAgent implements with DRY principles
-6. DesignUXExpertAgent validates UX consistency (if UI changes)
-7. PerformanceOptimizer ensures no performance regression (optional)
-8. Final collaborative review
+1. ProductManagerAgent defines refactor goals, scope, and acceptance criteria
+2. ReusabilityExpertAgent analyzes current component for reusability
+3. FrontEndExpertAgent reviews technical implementation
+4. Security Expert Agent reviews security implications (optional)
+5. ReusabilityExpertAgent creates reusable component design
+6. FrontEndExpertAgent implements with DRY principles
+7. DesignUXExpertAgent validates UX consistency (if UI changes)
+8. PerformanceOptimizer ensures no performance regression (optional)
+9. Final collaborative review
 
 #### **Location Service Optimization:**
 ```
 CollaborativeAgent: Optimize location services for our [feature]
 ```
 **Automated Process:**
-1. LocalizationServicesOptimizer analyzes current location services
-2. Security Expert Agent reviews location data security
-3. PerformanceOptimizer reviews location performance impact
-4. AI/ML Expert Agent suggests AI-powered location features (optional)
-5. LocalizationServicesOptimizer suggests location optimizations
-6. Security Expert Agent ensures location data protection
-7. PerformanceOptimizer validates performance improvements
-8. FrontEndExpertAgent validates technical feasibility (if needed)
-9. DesignUXExpertAgent reviews location UX impact (if UI changes)
-10. Final collaborative review
+1. ProductManagerAgent defines KPIs and success thresholds for optimization
+2. LocalizationServicesOptimizer analyzes current location services
+3. Security Expert Agent reviews location data security
+4. PerformanceOptimizer reviews location performance impact
+5. AI/ML Expert Agent suggests AI-powered location features (optional)
+6. LocalizationServicesOptimizer suggests location optimizations
+7. Security Expert Agent ensures location data protection
+8. PerformanceOptimizer validates performance improvements
+9. FrontEndExpertAgent validates technical feasibility (if needed)
+10. DesignUXExpertAgent reviews location UX impact (if UI changes)
+11. Final collaborative review
 
 #### **Innovation and Strategy:**
 ```
 CollaborativeAgent: Develop innovative [feature] with competitive advantages
 ```
 **Automated Process:**
-1. InnovationExpertAgent generates innovative ideas and value propositions
-2. AI/ML Expert Agent suggests AI-powered innovations
-3. DesignUXExpertAgent reviews UX implications and design feasibility
-4. FrontEndExpertAgent assesses technical implementation feasibility
-5. Security Expert Agent reviews security implications (optional)
-6. InnovationExpertAgent refines ideas based on technical and design feedback
-7. AI/ML Expert Agent refines AI-powered features
-8. DesignUXExpertAgent creates initial design concepts
-9. FrontEndExpertAgent plans technical implementation approach
-10. ReusabilityExpertAgent suggests reusable patterns (if applicable)
-11. PerformanceOptimizer reviews performance implications (if applicable)
-12. InnovationExpertAgent validates competitive advantage and market fit
-13. Final collaborative review with innovation focus
+1. ProductManagerAgent defines problem framing, opportunity sizing, and success metrics
+2. InnovationExpertAgent generates innovative ideas and value propositions
+3. AI/ML Expert Agent suggests AI-powered innovations
+4. DesignUXExpertAgent reviews UX implications and design feasibility
+5. FrontEndExpertAgent assesses technical implementation feasibility
+6. Security Expert Agent reviews security implications (optional)
+7. InnovationExpertAgent refines ideas based on technical and design feedback
+8. AI/ML Expert Agent refines AI-powered features
+9. DesignUXExpertAgent creates initial design concepts
+10. FrontEndExpertAgent plans technical implementation approach
+11. ReusabilityExpertAgent suggests reusable patterns (if applicable)
+12. PerformanceOptimizer reviews performance implications (if applicable)
+13. InnovationExpertAgent validates competitive advantage and market fit
+14. Final collaborative review with innovation focus
 
 #### **Comprehensive Feature Development:**
 ```
 CollaborativeAgent: Develop a comprehensive [feature] requiring all perspectives
 ```
 **Automated Process:**
-1. DesignUXExpertAgent creates initial design
-2. FrontEndExpertAgent reviews technical feasibility
-3. ReusabilityExpertAgent analyzes component reusability
-4. LocalizationServicesOptimizer reviews location implications
-5. Security Expert Agent reviews security implications
-6. PerformanceOptimizer analyzes performance impact
-7. AI/ML Expert Agent suggests AI-powered features
-8. DesignUXExpertAgent refines design based on feedback
-9. FrontEndExpertAgent plans implementation with reusable components
-10. ReusabilityExpertAgent validates DRY principles
-11. LocalizationServicesOptimizer optimizes location features
-12. Security Expert Agent ensures security implementation
-13. PerformanceOptimizer ensures performance optimization
-14. AI/ML Expert Agent validates AI implementation
-15. DesignUXExpertAgent reviews implementation for UX
-16. TasksAgent saves analysis for future reference (optional)
-17. Final collaborative review
+1. ProductManagerAgent creates initial PRD, milestones, and KPIs
+2. DesignUXExpertAgent creates initial design
+3. FrontEndExpertAgent reviews technical feasibility
+4. ReusabilityExpertAgent analyzes component reusability
+5. LocalizationServicesOptimizer reviews location implications (if applicable)
+6. Security Expert Agent reviews security implications
+7. PerformanceOptimizer analyzes performance impact
+8. AI/ML Expert Agent suggests AI-powered features (if applicable)
+9. DesignUXExpertAgent refines design based on feedback
+10. FrontEndExpertAgent plans implementation with reusable components
+11. ReusabilityExpertAgent validates DRY principles
+12. LocalizationServicesOptimizer optimizes location features (if applicable)
+13. Security Expert Agent ensures security implementation
+14. PerformanceOptimizer ensures performance optimization
+15. AI/ML Expert Agent validates AI implementation (if applicable)
+16. DesignUXExpertAgent reviews implementation for UX
+17. TasksAgent saves analysis for future reference (optional)
+18. Final collaborative review
 
 ## Performance Mode
 
@@ -271,17 +286,18 @@ CollaborativeAgent: Develop a comprehensive [feature] requiring all perspectives
 ## Agent Communication Protocols
 
 ### Cross-Agent Feedback Requests:
-1. **Design → Technical**: "FrontEndExpertAgent, review this design for technical feasibility"
-2. **Technical → Design**: "DesignUXExpertAgent, suggest UX improvements for this implementation"
-3. **Reusability → Design**: "DesignUXExpertAgent, how can we make this design more consistent?"
-4. **Reusability → Technical**: "FrontEndExpertAgent, can we extract this pattern into a reusable component?"
-5. **Technical → Reusability**: "ReusabilityExpertAgent, how can we make this implementation more DRY?"
-6. **Design → Reusability**: "ReusabilityExpertAgent, can we create a reusable design pattern here?"
-7. **Location → Security**: "Security Expert Agent, review location data security for this feature"
-8. **Performance → UX**: "DesignUXExpertAgent, validate UX impact of performance optimizations"
-9. **AI → Security**: "Security Expert Agent, review AI data protection requirements"
-10. **Innovation → Technical**: "FrontEndExpertAgent, assess technical feasibility of this innovation"
-11. **Collaborative Review**: All agents review and provide feedback on each other's work
+1. **Product → Design**: "ProductManagerAgent, define requirements and success metrics for this feature"
+2. **Design → Technical**: "FrontEndExpertAgent, review this design for technical feasibility"
+3. **Technical → Design**: "DesignUXExpertAgent, suggest UX improvements for this implementation"
+4. **Reusability → Design**: "DesignUXExpertAgent, how can we make this design more consistent?"
+5. **Reusability → Technical**: "FrontEndExpertAgent, can we extract this pattern into a reusable component?"
+6. **Technical → Reusability**: "ReusabilityExpertAgent, how can we make this implementation more DRY?"
+7. **Design → Reusability**: "ReusabilityExpertAgent, can we create a reusable design pattern here?"
+8. **Location → Security**: "Security Expert Agent, review location data security for this feature"
+9. **Performance → UX**: "DesignUXExpertAgent, validate UX impact of performance optimizations"
+10. **AI → Security**: "Security Expert Agent, review AI data protection requirements"
+11. **Innovation → Technical**: "FrontEndExpertAgent, assess technical feasibility of this innovation"
+12. **Collaborative Review**: All agents review and provide feedback on each other's work
 
 ### Communication Patterns:
 - **Request Review**: "AgentName, please review this [design/implementation/component] and provide feedback"
@@ -292,38 +308,41 @@ CollaborativeAgent: Develop a comprehensive [feature] requiring all perspectives
 ## Integration Workflow
 
 ### Development Phases:
-1. **Design Phase**: Use DesignUXExpertAgent for UI/UX planning
-2. **Technical Review**: FrontEndExpertAgent reviews design for feasibility
-3. **Reusability Review**: ReusabilityExpertAgent analyzes for component patterns
-4. **Location Review**: LocalizationServicesOptimizer reviews location implications (if applicable)
-5. **Security Review**: Security Expert Agent reviews security implications (if applicable)
-6. **Performance Review**: PerformanceOptimizer analyzes performance impact (if applicable)
-7. **AI Review**: AI/ML Expert Agent suggests AI capabilities (if applicable)
-8. **Innovation Review**: InnovationExpertAgent validates competitive advantages (if applicable)
-9. **Implementation Phase**: Use FrontEndExpertAgent for technical implementation
-10. **UX Review**: DesignUXExpertAgent reviews implementation for UX quality
-11. **Reusability Validation**: ReusabilityExpertAgent ensures DRY principles
-12. **Review Phase**: Use all agents for comprehensive review
+1. **Product Phase**: Use ProductManagerAgent for requirements and strategy
+2. **Design Phase**: Use DesignUXExpertAgent for UI/UX planning
+3. **Technical Review**: FrontEndExpertAgent reviews design for feasibility
+4. **Reusability Review**: ReusabilityExpertAgent analyzes for component patterns
+5. **Location Review**: LocalizationServicesOptimizer reviews location implications (if applicable)
+6. **Security Review**: Security Expert Agent reviews security implications (if applicable)
+7. **Performance Review**: PerformanceOptimizer analyzes performance impact (if applicable)
+8. **AI Review**: AI/ML Expert Agent suggests AI capabilities (if applicable)
+9. **Innovation Review**: InnovationExpertAgent validates competitive advantages (if applicable)
+10. **Implementation Phase**: Use FrontEndExpertAgent for technical implementation
+11. **UX Review**: DesignUXExpertAgent reviews implementation for UX quality
+12. **Reusability Validation**: ReusabilityExpertAgent ensures DRY principles
+13. **Review Phase**: Use all agents for comprehensive review
 
 ### Example Workflows:
-- **New Feature**: DesignUXExpertAgent → FrontEndExpertAgent (feasibility) → ReusabilityExpertAgent (patterns) → FrontEndExpertAgent (implementation) → DesignUXExpertAgent (UX review) → ReusabilityExpertAgent (DRY validation)
-- **Location Feature**: DesignUXExpertAgent → LocalizationServicesOptimizer → Security Expert Agent → FrontEndExpertAgent → PerformanceOptimizer → AI/ML Expert Agent → Final review
-- **Performance Feature**: PerformanceOptimizer → DesignUXExpertAgent → FrontEndExpertAgent → Security Expert Agent → Final review
-- **AI Feature**: AI/ML Expert Agent → DesignUXExpertAgent → Security Expert Agent → FrontEndExpertAgent → PerformanceOptimizer → Final review
-- **Security Feature**: Security Expert Agent → DesignUXExpertAgent → FrontEndExpertAgent → PerformanceOptimizer → Final review
+- **New Feature**: ProductManagerAgent → DesignUXExpertAgent → FrontEndExpertAgent (feasibility) → ReusabilityExpertAgent (patterns) → FrontEndExpertAgent (implementation) → DesignUXExpertAgent (UX review) → ReusabilityExpertAgent (DRY validation)
+- **Location Feature**: ProductManagerAgent → DesignUXExpertAgent → LocalizationServicesOptimizer → Security Expert Agent → FrontEndExpertAgent → PerformanceOptimizer → AI/ML Expert Agent → Final review
+- **Performance Feature**: ProductManagerAgent → PerformanceOptimizer → DesignUXExpertAgent → FrontEndExpertAgent → Security Expert Agent → Final review
+- **AI Feature**: ProductManagerAgent → AI/ML Expert Agent → DesignUXExpertAgent → Security Expert Agent → FrontEndExpertAgent → PerformanceOptimizer → Final review
+- **Security Feature**: ProductManagerAgent → Security Expert Agent → DesignUXExpertAgent → FrontEndExpertAgent → PerformanceOptimizer → Final review
 - **Bug Fix**: FrontEndExpertAgent → DesignUXExpertAgent (if UI changes needed) → ReusabilityExpertAgent (if refactoring needed) → FrontEndExpertAgent (implementation)
 - **Performance Issue**: FrontEndExpertAgent → DesignUXExpertAgent (UX impact assessment) → ReusabilityExpertAgent (reusable optimizations) → All for final review
 
 ### Collaborative Iteration Process:
-1. **Initial Design**: DesignUXExpertAgent creates design
-2. **Technical Feedback**: FrontEndExpertAgent reviews and suggests technical constraints
-3. **Reusability Analysis**: ReusabilityExpertAgent identifies reusable patterns
-4. **Specialized Reviews**: Location, Security, Performance, AI agents review as needed
-5. **Design Refinement**: DesignUXExpertAgent adjusts based on feedback
-6. **Implementation**: FrontEndExpertAgent implements with reusable components
-7. **Final Review**: All agents validate the complete solution
+1. **Product Definition**: ProductManagerAgent defines requirements and success metrics
+2. **Initial Design**: DesignUXExpertAgent creates design
+3. **Technical Feedback**: FrontEndExpertAgent reviews and suggests technical constraints
+4. **Reusability Analysis**: ReusabilityExpertAgent identifies reusable patterns
+5. **Specialized Reviews**: Location, Security, Performance, AI agents review as needed
+6. **Design Refinement**: DesignUXExpertAgent adjusts based on feedback
+7. **Implementation**: FrontEndExpertAgent implements with reusable components
+8. **Final Review**: All agents validate the complete solution
 
 ## Project Context
-This is a React Native/Expo travel buddy application with location-based POI discovery. 
-Focus on mobile-first design, location-based user experiences, maintainable reusable code architecture, 
-performance optimization, security best practices, AI/ML integration, and innovative competitive features. 
+This is a React Native/Expo application development environment. 
+Focus on mobile-first design, user experiences, maintainable reusable code architecture, 
+performance optimization, security best practices, AI/ML integration (if applicable), 
+location services (if applicable), and innovative competitive features. 

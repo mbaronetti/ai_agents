@@ -383,7 +383,7 @@
     }
   },
   "contextAwareness": {
-    "projectType": "React Native/Expo Travel App",
+    "projectType": "React Native/Expo Application",
     "improvementCategories": [
       "Performance Optimization",
       "Security Enhancement", 
@@ -444,7 +444,7 @@
         "priority": "medium"
       },
       "location": {
-        "keywords": ["location", "GPS", "geolocation", "coordinates", "distance", "POI", "proximity"],
+        "keywords": ["location", "GPS", "geolocation", "coordinates", "distance", "proximity"],
         "agent": "LocalizationServicesOptimizer",
         "priority": "high"
       },
@@ -525,7 +525,7 @@
         "priority": "medium"
       },
       "location": {
-        "keywords": ["location", "GPS", "geolocation", "coordinates", "distance", "POI", "proximity"],
+        "keywords": ["location", "GPS", "geolocation", "coordinates", "distance", "proximity"],
         "agentFile": "@localization.json",
         "priority": "high"
       },
@@ -762,7 +762,7 @@
       },
       "LocalizationServicesOptimizer": {
         "specialties": ["Location Services", "Geolocation", "GPS Optimization", "Location Data", "Battery Optimization"],
-        "bestFor": "Location-based features, GPS optimization, POI discovery",
+        "bestFor": "Location-based features, GPS optimization, location services",
         "command": "@localization #[id]"
       },
       "PerformanceOptimizer": {

@@ -12,6 +12,24 @@ A sophisticated multi-agent system for collaborative software development, featu
 
 ### Expert Agents
 
+#### 🧭 **ProductManagerAgent**
+- Product strategy and management
+- Requirements definition and prioritization
+- User story creation and acceptance criteria
+- KPI definition and success metrics
+
+#### 🏗️ **ArchitectAgent**
+- System architecture and technical design
+- Architectural decision making
+- Technical strategy and planning
+- System integration and scalability
+
+#### 🖥️ **BackendExpertAgent**
+- Backend services and API development
+- Database design and optimization
+- Server-side implementation
+- Infrastructure and deployment
+
 #### 🎨 **DesignUXExpertAgent**
 - Mobile-first UI/UX design expertise
 - User experience optimization
@@ -34,7 +52,7 @@ A sophisticated multi-agent system for collaborative software development, featu
 - Location services expertise
 - GPS optimization
 - Geolocation features
-- POI (Points of Interest) integration
+- Location-based functionality (if applicable)
 
 #### ⚡ **PerformanceOptimizer**
 - Performance optimization
@@ -79,22 +97,22 @@ The system automatically determines relevant agents based on:
 
 #### UI Component Development
 ```
-CollaborativeAgent: Develop a new [UI component] for our Travel Buddy app
+CollaborativeAgent: Develop a new [UI component] for our React Native/Expo app
 ```
 
 #### Location-Heavy Feature Development
 ```
-CollaborativeAgent: Develop a location-based [feature] for our Travel Buddy app
+CollaborativeAgent: Develop a location-based [feature] for our React Native/Expo app
 ```
 
 #### Performance-Critical Feature Development
 ```
-CollaborativeAgent: Develop a performance-critical [feature] for our Travel Buddy app
+CollaborativeAgent: Develop a performance-critical [feature] for our React Native/Expo app
 ```
 
 #### AI-Powered Feature Development
 ```
-CollaborativeAgent: Develop an AI-powered [feature] for our Travel Buddy app
+CollaborativeAgent: Develop an AI-powered [feature] for our React Native/Expo app
 ```
 
 ## 🛠️ Setup
@@ -133,9 +151,14 @@ CollaborativeAgent: Develop an AI-powered [feature] for our Travel Buddy app
 
 ### Agent Invocation Examples
 
+#### For Product Management
+```
+ProductManagerAgent: Define requirements for a new user profile feature
+```
+
 #### For UI/UX Design
 ```
-DesignUXExpertAgent: Create a modern login screen for our travel app
+DesignUXExpertAgent: Create a modern login screen for our app
 ```
 
 #### For Technical Implementation
@@ -158,15 +181,21 @@ Security Expert Agent: Implement secure user authentication
 LocalizationServicesOptimizer: Add GPS-based restaurant recommendations
 ```
 
+#### For AI/ML Features
+```
+AI/ML Expert Agent: Implement AI-powered product recommendations
+```
+
 ## 🎯 Project Context
 
-This system is optimized for **React Native/Expo travel buddy applications** with:
+This system is optimized for **React Native/Expo applications** with:
 - Mobile-first design principles
-- Location-based user experiences
+- User experience optimization
 - Maintainable reusable code architecture
 - Performance optimization
 - Security best practices
-- AI/ML integration capabilities
+- AI/ML integration capabilities (if applicable)
+- Location services (if applicable)
 - Innovative competitive features
 
 ## 📁 Project Structure
@@ -176,19 +205,23 @@ ai_agents/
 ├── .cursor/
 │   ├── agents/
 │   │   ├── collaborative.json      # Main orchestrator agent
-│   │   ├── designer.json          # UI/UX design expert
-│   │   ├── frontend.json          # Frontend development expert
-│   │   ├── reusability.json       # Code reusability expert
-│   │   ├── localization.json      # Location services expert
-│   │   ├── performance.json       # Performance optimization expert
-│   │   ├── innovation.json        # Innovation and strategy expert
-│   │   ├── ai-ml.json            # AI/ML integration expert
-│   │   ├── security.json          # Security and privacy expert
-│   │   ├── tasks.json             # Progress tracking expert
-│   │   └── README.md              # Agent documentation
-│   └── agents.json                # Agent configuration
-├── .cursorrules                   # Cursor IDE rules
-└── README.md                      # This file
+│   │   ├── product-manager.json    # Product management expert
+│   │   ├── architect.json          # System architecture expert
+│   │   ├── backend.json            # Backend development expert
+│   │   ├── designer.json           # UI/UX design expert
+│   │   ├── frontend.json           # Frontend development expert
+│   │   ├── reusability.json        # Code reusability expert
+│   │   ├── location.json           # Location services expert
+│   │   ├── performance.json        # Performance optimization expert
+│   │   ├── innovation.json         # Innovation and strategy expert
+│   │   ├── ai-ml.json             # AI/ML integration expert
+│   │   ├── security.json           # Security and privacy expert
+│   │   ├── tasks.json              # Progress tracking expert
+│   │   └── README.md               # Agent documentation
+│   └── agents.json                 # Agent configuration
+├── .cursorrules                    # Cursor IDE rules
+├── PROJECT_AGNOSTIC_MIGRATION.md   # Migration documentation
+└── README.md                       # This file
 ```
 
 ## 🤝 Contributing

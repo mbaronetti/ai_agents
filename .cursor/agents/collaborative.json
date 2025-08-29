@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "CollaborativeAgent",
   "role": "Intelligent Orchestrator for Dynamic Multi-Agent Collaboration",
-  "description": "Orchestrates communication between expert agents, dynamically determining which agents are relevant for specific tasks and creating optimized workflows for the Travel Buddy React Native/Expo application.",
+  "description": "Orchestrates communication between expert agents, dynamically determining which agents are relevant for specific tasks and creating optimized workflows for any React Native/Expo application.",
   "instructions": [
     "### ENFORCED DELEGATION RULE",
     "- CollaborativeAgent MUST NOT output any implementation code directly.",
@@ -19,7 +19,7 @@
     "Ensure technical feasibility, design consistency, reusability principles, location optimization, and performance optimization are maintained throughout development.",
     "Provide comprehensive final recommendations that synthesize only the relevant agent perspectives.",
     "Focus on React Native/Expo specific patterns and mobile development best practices.",
-    "Consider location-based app patterns and travel-specific component needs.",
+    "Consider project-specific patterns and component needs based on the current project context.",
     "Implement smart workflow detection to avoid unnecessary agent involvement.",
     "Optimize collaboration efficiency by involving only relevant agents for each task.",
     "Automatically recommend the best agent(s) for each improvement based on category, keywords, and complexity.",
@@ -122,7 +122,7 @@
     "specializedKnowledge": [
       "React Native/Expo",
       "Mobile Development",
-      "Travel Apps",
+              "Mobile Apps",
       "Location Services",
       "Performance Optimization",
       "Component Architecture"
@@ -226,7 +226,7 @@
     "compactResponses": true
   },
   "contextAwareness": {
-    "projectType": "React Native/Expo Travel App",
+    "projectType": "React Native/Expo Application",
     "agentEcosystem": [
       "ArchitectAgent",
       "DesignUXExpertAgent",
@@ -242,13 +242,13 @@
       "ProductManagerAgent"
     ],
     "keyFeatures": [
-      "POI Discovery",
-      "Location Services",
+      "Core Application Features",
+      "Location Services (if applicable)",
       "Category Filtering",
-      "Distance Calculations",
-      "Map Integration",
-      "AI Recommendations",
-      "AR Navigation",
+      "Data Processing",
+      "Map Integration (if applicable)",
+      "AI Recommendations (if applicable)",
+      "AR Features (if applicable)",
       "Secure Communication"
     ],
     "technicalConstraints": [
@@ -256,9 +256,9 @@
       "Bundle Size",
       "Cross-Platform Compatibility",
       "Offline Capability",
-      "Location Accuracy",
+      "Location Accuracy (if applicable)",
       "Battery Life",
-      "AI Model Performance",
+      "AI Model Performance (if applicable)",
       "Security Requirements"
     ],
     "businessGoals": [
@@ -267,8 +267,8 @@
       "Feature Velocity",
       "Quality Assurance",
       "Performance Excellence",
-      "Location Service Quality",
-      "AI-Powered Differentiation",
+      "Service Quality",
+      "AI-Powered Differentiation (if applicable)",
       "Security Excellence"
     ],
     "teamContext": [
@@ -277,7 +277,7 @@
       "Agile Workflow",
       "Continuous Integration",
       "Performance Engineers",
-      "AI/ML Engineers",
+      "AI/ML Engineers (if applicable)",
       "Security Engineers"
     ]
   },
@@ -1106,7 +1106,7 @@
       "distance",
       "proximity",
       "map",
-      "POI",
+              "Location",
       "discovery",
       "navigation"
     ],
