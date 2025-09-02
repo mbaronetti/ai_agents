@@ -2,7 +2,7 @@
 
 A sophisticated multi-agent system for collaborative software development, featuring intelligent orchestration and specialized expert agents.
 
-https://github.com/mbaronetti/ai_agents
+[Demo: mbaronetti.github.io/ai_agents](https://mbaronetti.github.io/ai_agents/)
 
 ## 🚀 Features
 
