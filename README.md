@@ -119,7 +119,6 @@ CollaborativeAgent: Develop an AI-powered [feature] for our React Native/Expo ap
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- npm or yarn
 - Git
 
 ### Installation
@@ -130,12 +129,7 @@ CollaborativeAgent: Develop an AI-powered [feature] for our React Native/Expo ap
    cd ai_agents
    ```
 
-2. **Install dependencies** (if any are added in the future)
-   ```bash
-   npm install
-   ```
-
-3. **Configure Cursor IDE**
+2. **Configure Cursor IDE**
    - Ensure you have Cursor IDE installed
    - The `.cursor` directory contains all agent configurations
    - Agents are automatically available in your Cursor workspace
@@ -146,44 +140,44 @@ CollaborativeAgent: Develop an AI-powered [feature] for our React Native/Expo ap
 1. Open your project in Cursor IDE
 2. Use the agent system by invoking specific agents:
    ```
-   CollaborativeAgent: [your feature request]
+   @collaborative.json: [your feature request]
    ```
 
 ### Agent Invocation Examples
 
 #### For Product Management
 ```
-ProductManagerAgent: Define requirements for a new user profile feature
+@product-manager.json:: Define requirements for a new user profile feature
 ```
 
 #### For UI/UX Design
 ```
-DesignUXExpertAgent: Create a modern login screen for our app
+@designer.json:: Create a modern login screen for our app
 ```
 
 #### For Technical Implementation
 ```
-FrontEndExpertAgent: Implement a reusable button component
+@frontend.json:: Implement a reusable button component
 ```
 
 #### For Performance Optimization
 ```
-PerformanceOptimizer: Optimize the image loading in our gallery component
+@performance.json:: Optimize the image loading in our gallery component
 ```
 
 #### For Security Implementation
 ```
-Security Expert Agent: Implement secure user authentication
+@security.json:: Implement secure user authentication
 ```
 
 #### For Location Features
 ```
-LocalizationServicesOptimizer: Add GPS-based restaurant recommendations
+@location.json:: Add GPS-based restaurant recommendations
 ```
 
 #### For AI/ML Features
 ```
-AI/ML Expert Agent: Implement AI-powered product recommendations
+@ai-ml.json:: Implement AI-powered product recommendations
 ```
 
 ## 🎯 Project Context
