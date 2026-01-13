@@ -1,0 +1,138 @@
+# ================================================
+# Cursor Rules (Portable) — Agent Integration Enabled
+# ================================================
+# Usage:
+# 1) Copy this file to your target project's `.cursor/rules`
+# 2) Copy your agents folder to the target project's `.cursor/agents/`
+# 3) In the target project, invoke agents using the standardized prefixes below
+# Notes:
+# - These rules enforce strict delegation and avoid direct implementation code.
+# - Designed for light, fast, and collaborative multi-agent workflows.
+# - Works out-of-the-box with the agents defined in `.cursor/agents/`.
+
+[orchestrator]
+use_strict_delegation = true
+avoid_direct_code_generation = true
+max_agents = 3
+parallel_agent_invocation = true
+reuse_cached_analysis = true
+light_mode = true
+
+[performance]
+optimize_tokens = true
+minimize_verbose_logs = true
+prefer_compact_responses = true
+enable_caching = true
+reduce_redundant_steps = true
+
+[workflow]
+enforce_5_phase_flow = true
+block_direct_implementation = true
+strict_agent_invocation_format = true
+always_show_agent_source = true
+
+[output]
+format = markdown
+include_agent_source = true
+concise = true
+standardized_format = true
+priority_synthesis = true
+
+[tracking]
+enable_minimal_tracking = true
+real_time_agent_progress = false
+log_agent_selection = true
+
+# ================================================
+# Agent Import Integration
+# ================================================
+# Ensures imported agents are auto-discovered and used via strict delegation.
+[agent_import_integration]
+enable_agent_auto_discovery = true
+agents_dir = .cursor/agents
+require_strict_agent_invocation = true
+supported_invocation_prefixes = CollaborativeAgent:, ProductManagerAgent:, ArchitectAgent:, BackendExpertAgent:, DesignUXExpertAgent:, FrontEndExpertAgent:, ReusabilityExpertAgent:, IntegrationExpertAgent:, PerformanceOptimizer:, InnovationExpertAgent:, AIMLExpertAgent:, SecurityExpertAgent:, TasksAgent:
+default_agent = CollaborativeAgent
+allow_agent_switching = true
+
+# ================================================
+# Available Agents (expected in `.cursor/agents/`)
+# ================================================
+# - ProductManagerAgent: Senior Product Manager for outcomes and delivery
+# - ArchitectAgent: System architecture and technical design
+# - BackendExpertAgent: Backend, APIs, databases, serverless, edge
+# - DesignUXExpertAgent: UI/UX design, responsive web, accessibility
+# - FrontEndExpertAgent: React 18+, Next.js 14+, TypeScript, TailwindCSS
+# - ReusabilityExpertAgent: Component architecture, DRY, design systems
+# - IntegrationExpertAgent: Third-party APIs, payments, auth providers
+# - PerformanceOptimizer: Core Web Vitals, bundle optimization, caching
+# - InnovationExpertAgent: Creative ideation, competitive strategy
+# - AIMLExpertAgent: LLM integration, AI SDKs, RAG, embeddings
+# - SecurityExpertAgent: Web security, OAuth, CORS, CSP, compliance
+# - TasksAgent: Progress tracking and task management
+# - CollaborativeAgent: Orchestrator for dynamic multi-agent collaboration
+
+# Invoke with (examples):
+#   CollaborativeAgent: Develop a new [feature]
+#   ProductManagerAgent: Define PRD and acceptance criteria for [feature]
+#   FrontEndExpertAgent: Review technical feasibility for [design]
+
+# ================================================
+# Smart Agent Selection (portable defaults)
+# ================================================
+# The orchestrator chooses agents by keywords/context and task complexity.
+[agent_selection]
+context_aware_selection = true
+keyword_routing = true
+relevance_scoring = true
+
+# Relevance keywords (summary):
+# - ProductManagerAgent: product, roadmap, PRD, acceptance, KPI, scope
+# - ArchitectAgent: architecture, contracts, system design, API design
+# - BackendExpertAgent: backend, API, server, database, serverless, auth
+# - DesignUXExpertAgent: UI, UX, layout, responsive, accessibility
+# - FrontEndExpertAgent: React, Next.js, TypeScript, component, hooks
+# - ReusabilityExpertAgent: refactor, reusable, DRY, patterns, architecture
+# - IntegrationExpertAgent: Stripe, webhook, OAuth, third-party, SDK
+# - PerformanceOptimizer: Core Web Vitals, LCP, INP, bundle, caching
+# - InnovationExpertAgent: innovation, competitive, strategy, opportunity
+# - AIMLExpertAgent: AI, LLM, GPT, Claude, embeddings, RAG
+# - SecurityExpertAgent: security, auth, CORS, CSP, XSS, CSRF
+# - TasksAgent: track, save, load, status, implementation progress
+
+# ================================================
+# Standardized Delegation Flow (enforced but lightweight)
+# ================================================
+# The orchestrator follows a 5-phase flow where applicable:
+# 1) Product Definition → 2) Design Planning → 3) Technical Review
+# 4) Specialized Reviews (Security/Performance/Integration) → 5) Final Collaboration
+
+[delegation_flow]
+require_standard_flow = true
+skip_unneeded_phases = true
+lightweight_justification = true
+
+# ================================================
+# Output Contract (portable)
+# ================================================
+# - Compact, skimmable responses, with agent source attribution
+# - Use Markdown (no raw URLs; use markdown links or backticks)
+# - Only format relevant sections (code/commands/tables)
+# - Prioritize clear, actionable outputs over verbose logs
+
+# ================================================
+# Project Context
+# ================================================
+# Modern React/TypeScript web applications with:
+# - React 18+, Next.js 14+, TypeScript, TailwindCSS
+# - Serverless/edge deployment (Vercel, Cloudflare)
+# - Modern tooling (Vite, Turbopack, Biome)
+# - Mobile support via responsive design and PWA
+
+# ================================================
+# Notes for External Projects
+# ================================================
+# - This ruleset is self-contained and portable.
+# - Copy `.cursor/rules` and `.cursor/agents/` into any project.
+# - The orchestrator will auto-discover agents in `.cursor/agents/` and
+#   enforce strict delegation with compact, standardized outputs.
